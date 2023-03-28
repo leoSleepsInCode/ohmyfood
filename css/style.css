@@ -2,12 +2,7 @@
 @import url('https: //cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto,family=Shrikhand&display=swap');
 
-/* 
-font-family: 'Shrikhand', cursive; */
-
-/* ============================== MEDIA QUERIES ============================== */
-
-/* ------------- Téléphone ------------- */
+/* font-family: 'Shrikhand', cursive; */
 
 body {
     margin: auto;
@@ -23,6 +18,10 @@ ul {
 a:link {
     text-decoration: none;
 }
+
+/* ============================== MEDIA QUERIES ============================== */
+
+/* ------------- Téléphone ------------- */
 
 @media screen and (max-width: 480px) {
 
