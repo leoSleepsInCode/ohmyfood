@@ -2,15 +2,22 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="Projet 3 - Openclassroom - Dev JS React" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title>Ohmyfood</title>
+        
         <link rel="preload" href="css/style.css" as="style">
+        <meta name="description" content="Projet 3 - Openclassroom - Dev JS React">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <nav>
-            <img src="images/logo/ohmyfood.png">
-            <!-- icône localisation -->
+            <img src="images/logo/ohmyfood.png" class="logo" alt="logo ohmyfood">
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i> 
+                <p>Paris, Belleville</p>
+            </div>
         </nav>
         <header>
             <h1>Réservez le menu qui vous convient</h1>
@@ -55,9 +62,9 @@
                                     Ménilmontant
                                 </p>
                             </figcaption>
-                            <div>
+                            <span>
                                 Nouveau
-                            </div>
+                            </span>
                             <!-- icône de favoris -->
                         </figure>
                     </li>
@@ -72,9 +79,9 @@
                                     Charonne
                                 </p>
                             </figcaption>
-                            <div>
+                            <span>
                                 Nouveau
-                            </div>
+                            </span>
                             <!-- icône de favoris -->
                         </figure>
                     </li>
@@ -110,7 +117,7 @@
             </article>
         </main>
         <footer>
-            <img src="images/logo/ohmyfood.png">
+            <img src="images/logo/ohmyfood.png" alt="logo ohmyfood">
             <ul>
                 <li>
                     Proposer un restaurant
