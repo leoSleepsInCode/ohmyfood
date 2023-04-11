@@ -1,12 +1,27 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 
-/* font-family: 'Shrikhand', cursive; */
+/* font-family: ', cursive; */
+
+:root {
+  --light-grey : hsl(0, 0%, 92%);
+  --white : hsl(0, 0%, 100%);
+  --button-gradient : linear-gradient(
+    0deg,
+    hsl(274, 64%, 61%), 
+    hsl(303, 64%, 65%)
+    );
+}
 
 body {
   margin: auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto','Shrikhand', sans-serif;
   box-sizing: border-box;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 25px;
 }
 
 ul {
@@ -30,21 +45,42 @@ a:link {
     }
     
     nav {
-      padding-left: 2%; /*variable */
-      padding-right: 2%; /*variable */
       text-align: center;
     }
 
+    nav p {
+      padding-left: 17px;
+    }
+    
+    header {
+      padding : 8% 6% 10%;
+      text-align: center;
+      background-color: hsl(0, 0%, 96%);
+    }
+
+    header p {
+      font-weight: 100;
+    }
+    
+    header button {
+      padding : 15px 20px;
+      border-radius: 25px;
+      border : none;
+      color : var(--white);
+      background: var(--button-gradient);
+    }
+    
     .location {
       display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--light-grey);
     }
 
-    header {
-      text-align: center;
-      background-color: grey;
-      padding-left: 2%; /*variable */
-      padding-right: 2%; /*variable */
+    .logo {
+      padding-top: 20px;
+      padding-bottom: 8px;
+      height: 30px;
     }
-  
 
 }
