@@ -4,13 +4,17 @@
 /* font-family: ', cursive; */
 
 :root {
-  --light-grey : hsl(0, 0%, 92%);
+  --light-grey-1 : hsl(0, 0%, 92%);
+  --light-grey-2 : hsl(0, 0%, 96%);
   --white : hsl(0, 0%, 100%);
   --button-gradient : linear-gradient(
     0deg,
     hsl(274, 64%, 61%), 
     hsl(303, 64%, 65%)
     );
+  --padding-section : 15% 5%;
+  --purple : hsl(274, 64%, 61%);
+  --footer-background : hsl(0, 0%, 21%);
 }
 
 body {
@@ -19,8 +23,12 @@ body {
   box-sizing: border-box;
 }
 
+h1,
+h2 {
+  margin :0;
+}
+
 header h1 {
-  margin: 0;
   font-size: 25px;
 }
 
@@ -39,10 +47,6 @@ a:link {
 /* ------------- Téléphone ------------- */
 
 @media screen and (max-width: 480px) {
-  
-    body {
-      
-    }
     
     nav {
       text-align: center;
@@ -69,12 +73,69 @@ a:link {
       color : var(--white);
       background: var(--button-gradient);
     }
+
+    main section {
+      padding: var(--padding-section);
+    }
+
+    main h2 {
+      padding-bottom: 30px;
+    }
+
+    main ul {
+      display: flex;
+      flex-direction: column; 
+      gap : 20px;
+    }
+
+    main button {
+      padding : 25px;
+      width : 95%;
+      border : none;
+      border-radius: 15px;
+      background-color: var(--light-grey-2);
+    }
+
+    article {
+      padding: var(--padding-section);
+      background-color: var(--light-grey-1);
+      box-sizing: border-box;
+    }
+
+    article li {
+      border-radius: 20px;
+      background-color: var(--white);
+    }
+    
+    article figure {
+      margin: 0;
+      width: 100%;
+    }
+
+    article img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+    }
+
+    footer {
+      padding: 20px;
+      color : var(--white);
+      background-color: hsl(0, 0%, 21%);
+    }
+
+    footer h2 {
+      padding-bottom: 17px;
+      font-family: 'Shrikhand';
+      font-size: 20px;
+      color : var(--white);
+    }
     
     .location {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: var(--light-grey);
+      background-color: var(--light-grey-1);
     }
 
     .logo {
