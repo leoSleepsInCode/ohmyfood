@@ -9,17 +9,17 @@
   --white : hsl(0, 0%, 100%);
   --button-gradient : linear-gradient(
     0deg,
-    hsl(274, 64%, 61%), 
-    hsl(303, 64%, 65%)
+    hsl(267, 66%, 60%), 
+    hsl(317, 100%, 74%)
     );
   --padding-section : 15% 5%;
-  --purple : hsl(274, 64%, 61%);
+  --purple : hsl(267, 66%, 60%);
   --footer-background : hsl(0, 0%, 21%);
 }
 
 body {
   margin: auto;
-  font-family: 'Roboto','Shrikhand', sans-serif;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
 
@@ -42,11 +42,11 @@ a:link {
   text-decoration: none;
 }
 
-nav {
+section {
    text-align: center;
 }
 
-nav p {
+section p {
   padding-left: 17px;
 }
     
@@ -57,7 +57,7 @@ header {
 }    
 
 header p {
-  font-weight: 100;
+  /* font-weight: 100; */
 }
     
 header button {
@@ -106,9 +106,14 @@ article figure {
   width: 100%;
 }
 
+article figcaption {
+  padding: 0 15px 20px;
+}
+
 article img {
   width: 100%;
   height: 170px;
+  border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
 
