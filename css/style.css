@@ -15,6 +15,7 @@
   --padding-section : 15% 5%;
   --purple : hsl(267, 66%, 60%);
   --footer-background : hsl(0, 0%, 21%);
+  --green : hsl(165, 56%, 75%); 
 }
 
 body {
@@ -24,12 +25,11 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+p {
   margin :0;
-}
-
-header h1 {
-  font-size: 25px;
 }
 
 ul {
@@ -40,6 +40,16 @@ ul {
 
 a:link {
   text-decoration: none;
+}
+
+section h1 {
+  font-family: 'Shrikhand';
+  padding-top : 15px;
+  padding-bottom: 8px;
+}
+
+section p {
+  padding: 15px;
 }
 
 section {
@@ -54,13 +64,18 @@ header {
   padding : 8% 6% 10%;
   text-align: center;
   background-color: hsl(0, 0%, 96%);
-}    
+}  
+
+header h2 {
+  font-size: 25px;
+}
 
 header p {
-  /* font-weight: 100; */
+  padding: 15px 0;
 }
-    
+  
 header button {
+  margin-top: 15px;
   padding : 15px 20px;
   border-radius: 25px;
   border : none;
@@ -72,8 +87,10 @@ main section {
   padding: var(--padding-section);
 }
 
-main h2 {
+main h3 {
   padding-bottom: 30px;
+  text-align: left;
+  font-size: 23px;
 }
 
 main ul {
@@ -97,16 +114,20 @@ article {
 }
 
 article li {
+  display: flex;
   border-radius: 20px;
   background-color: var(--white);
 }
     
 article figure {
+  position: relative;
   margin: 0;
   width: 100%;
 }
 
 article figcaption {
+  display: flex;
+  flex-direction: column;
   padding: 0 15px 20px;
 }
 
@@ -115,6 +136,15 @@ article img {
   height: 170px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
+  z-index: 1;
+}
+
+article h4 {
+  padding-top: 15px;
+}
+
+article p {
+  padding-top: 4px;
 }
 
 footer {
@@ -123,7 +153,7 @@ footer {
   background-color: hsl(0, 0%, 21%);
 }
 
-footer h2 {
+footer h3 {
   padding-bottom: 17px;
   font-family: 'Shrikhand';
   font-size: 20px;
@@ -143,4 +173,18 @@ footer h2 {
   height: 30px;
 }
 
-  
+.fa-heart {
+    align-self: flex-end;
+}
+
+.nouveau {
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 75%;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(165, 80%, 32%);
+  background-color: var(--green);
+  z-index: 4;
+}
