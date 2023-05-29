@@ -65,7 +65,7 @@ header h2 {
 header p {
   padding: 15px 30px;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
 }
   
 header button {
@@ -146,7 +146,7 @@ article figure {
 article figcaption {
   display: flex;
   flex-direction: column;
-  padding: 0 15px 20px;
+  padding: 0 25px 25px 20px;
 }
 
 article img {
@@ -159,10 +159,17 @@ article img {
 
 article h4 {
   padding-top: 15px;
+  font-size: 17px;
+  /* color : hsl(0, 0, 0); */
+}
+
+article li a:visited {
+  color: black;
 }
 
 article p {
   padding-top: 4px;
+  font-weight: 300;
 }
 
 footer {
@@ -174,8 +181,17 @@ footer {
 footer h3 {
   padding-bottom: 17px;
   font-family: 'Shrikhand';
-  font-size: 20px;
+  font-size: 18px;
   color : var(--white);
+}
+
+footer li {
+  padding-bottom: 6px ;
+}
+
+footer .fa-solid {
+  font-size: 12px;
+  padding-right: 10px;
 }
     
 .location {
@@ -192,8 +208,12 @@ footer h3 {
 }
 
 .fa-heart {
-    align-self: flex-end;
+  margin-top: -30px;
+  align-self: flex-end;
+  font-size: 20px;
 }
+
+/*fa heaert onclick color purple*/
 
 .nouveau {
   position: absolute;
