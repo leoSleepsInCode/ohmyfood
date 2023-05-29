@@ -1,7 +1,4 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
-
-/* font-family: ', cursive; */
 
 :root {
   --light-grey-1 : hsl(0, 0%, 92%);
@@ -42,42 +39,38 @@ a:link {
   text-decoration: none;
 }
 
-header h1 {
-  font-family: 'Shrikhand';
-  padding-top : 15px;
-  padding-bottom: 8px;
-}
-
-section p {
-  padding: 15px;
-}
-
-section {
-   text-align: center;
-}
-
-section p {
-  padding-left: 17px;
-}
-    
 header {
-  padding : 8% 6% 10%;
   text-align: center;
   background-color: hsl(0, 0%, 96%);
 }  
 
+header h1 {
+  padding : 15px 0 8px 0;
+  font-family: 'Shrikhand';
+  background-color: var(--white);
+  border-bottom: 3px solid hsla(0, 0%, 83%, 80%);
+  /* box-shadow: 2px 2px 3px hsl(0, 0%, 83%); */
+}
+
+header span {
+  padding: 15px 17px;
+}
+
 header h2 {
-  font-size: 25px;
-  font-weight: bolder;
+  padding: 35px 80px 0 80px;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 header p {
-  padding: 15px 0;
-  font-weight: 700;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 100;
 }
   
 header button {
   margin-top: 15px;
+  margin-bottom: 60px;
   padding : 15px 20px;
   border-radius: 25px;
   border : none;
@@ -119,6 +112,10 @@ article li {
   display: flex;
   border-radius: 20px;
   background-color: var(--white);
+}
+
+article a {
+  width: 100%;
 }
     
 article figure {
