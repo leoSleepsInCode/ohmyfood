@@ -242,6 +242,10 @@ footer .fa-solid {
   border-color : var(--light-grey-1);
 }
 
+.top-image {
+  border-radius : none;
+}
+
 .top-title{
   display: flex;
   justify-content: space-around;
