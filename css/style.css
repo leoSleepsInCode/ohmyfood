@@ -13,6 +13,8 @@
   --green : hsl(165, 56%, 75%); 
 }
 
+/*silver, grey, space*/
+
 body {
   margin: auto;
   font-family: 'Roboto', sans-serif;
@@ -297,6 +299,7 @@ footer .fa-solid {
 }
 
 .menu {
+  /* position: relative; */
   display: block ;
   padding: 15px;
  
@@ -309,17 +312,18 @@ footer .fa-solid {
 
 .page section h3 {
   padding: 0;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
+
 
 .name-price {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin : 0;
-
+  margin : 0; 
 }
+ 
 
 .order-button {
   margin-top: 15px;
@@ -329,4 +333,64 @@ footer .fa-solid {
   border: none;
   color: var(--white);
   background: var(--button-gradient);
+}
+
+/* .fa-circle-check {
+  position : absolute;
+  right : -100px;
+  transition : right 0.5s ease;
+}
+
+.price {
+  margin-left: 0;
+  transition: margin-left 0.5s ease;
+}
+
+.menu:hover .fa-circle-check {
+  right : 200px;
+}
+
+.menu:hover .price {
+  margin-left: 300px;
+} */
+
+.price {
+  position: absolute;
+  top: 471px;
+  right: 25px;
+  z-index: 2;
+  /* right: 105px; avec animation*/
+}
+
+.price-2 {
+  position: absolute;
+  top: 791px;
+  right: 25px;
+}
+
+.menu .fa-circle-check {
+  position : absolute;
+  top : 455px;
+  right : 35px;
+  font-size: 30px;
+  color : var(--white)
+}
+
+.menu-selection {
+  position : absolute;
+  top : 433px ;
+  right : 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 80px;
+  height: 72px;
+  background-color: var(--green);
+}
+
+.menu p {
+  /* width: 350px; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
 }
