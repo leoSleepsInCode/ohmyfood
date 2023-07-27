@@ -335,30 +335,13 @@ footer .fa-solid {
   background: var(--button-gradient);
 }
 
-/* .fa-circle-check {
-  position : absolute;
-  right : -100px;
-  transition : right 0.5s ease;
-}
-
-.price {
-  margin-left: 0;
-  transition: margin-left 0.5s ease;
-}
-
-.menu:hover .fa-circle-check {
-  right : 200px;
-}
-
-.menu:hover .price {
-  margin-left: 300px;
-} */
-
+/* Prix à pousser avec l'animation */
 .price {
   position: absolute;
   top: 471px;
   right: 25px;
   z-index: 2;
+ 
   /* right: 105px; avec animation*/
 }
 
@@ -376,6 +359,7 @@ footer .fa-solid {
   color : var(--white)
 }
 
+/*Bloc vert de sélection à animer*/
 .menu-selection {
   position : absolute;
   top : 433px ;
@@ -385,7 +369,14 @@ footer .fa-solid {
   width: 80px;
   height: 72px;
   background-color: var(--green);
+  transform: translateX(120%);
+  transition : transform 0.5s ease;
 }
+
+.menu:hover .menu-selection {
+  transform: translateX(0%);
+}
+
 
 .menu p {
   /* width: 350px; */
