@@ -304,6 +304,7 @@ footer .fa-solid {
   padding: 15px;
  
 }
+
 .page section h2 {
   font-variant-caps: all-petite-caps;
   font-weight: 200;
@@ -316,7 +317,6 @@ footer .fa-solid {
   font-weight: 400;
 }
 
-
 .name-price {
   display: flex;
   justify-content: space-between;
@@ -324,7 +324,6 @@ footer .fa-solid {
   margin : 0; 
 }
  
-
 .order-button {
   margin-top: 15px;
   margin-bottom: 35px;
@@ -335,23 +334,39 @@ footer .fa-solid {
   background: var(--button-gradient);
 }
 
-/* Prix à pousser avec l'animation */
+.menu p {
+  /* width: 350px; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+}
+
 .price {
   position: absolute;
+}
+
+.price.price-1 {
   top: 471px;
   right: 25px;
   z-index: 2;
- 
-  /* right: 105px; avec animation*/
+  transition: 0.5s ease; 
 }
 
-.price-2 {
+.menu-selection.menu-selection-1 {
   position: absolute;
-  top: 791px;
-  right: 25px;
+  top: 433px;
+  right: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 80px;
+  height: 72px;
+  background-color: var(--green);
+  transform: translateX(120%);
+  transition: 0.5s ease;
 }
 
-.menu .fa-circle-check {
+.menu .check-1 {
   position : absolute;
   top : 455px;
   right : 35px;
@@ -359,29 +374,18 @@ footer .fa-solid {
   color : var(--white)
 }
 
-/*Bloc vert de sélection à animer*/
-.menu-selection {
-  position : absolute;
-  top : 433px ;
-  right : 10px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  width: 80px;
-  height: 72px;
-  background-color: var(--green);
-  transform: translateX(120%);
-  transition : transform 0.5s ease;
-}
-
-.menu:hover .menu-selection {
+.menu:hover .menu-selection-1 {
   transform: translateX(0%);
 }
 
+.menu:hover .price-1 {
+  transform: translateX(-270%); 
+}
 
-.menu p {
-  /* width: 350px; */
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 15px;
+
+.price.price-4 {
+  top: 791px;
+  right: 25px;
+  z-index: 2;
+  transition: 0.5s ease;
 }
