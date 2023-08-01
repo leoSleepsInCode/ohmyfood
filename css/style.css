@@ -299,7 +299,7 @@ footer .fa-solid {
 }
 
 .menu {
-  /* position: relative; */
+  position: relative;
   display: block ;
   padding: 15px;
  
@@ -335,7 +335,6 @@ footer .fa-solid {
 }
 
 .menu p {
-  /* width: 350px; */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -344,19 +343,16 @@ footer .fa-solid {
 
 .price {
   position: absolute;
-}
-
-.price.price-1 {
-  top: 471px;
-  right: 25px;
+  bottom: 15px;
+  right: 14px;
   z-index: 2;
-  transition: 0.5s ease; 
+  transition: 0.5s ease;
 }
 
-.menu-selection.menu-selection-1 {
+.menu-selection {
   position: absolute;
-  top: 433px;
-  right: 10px;
+  top: 0px;
+  right: 0px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 80px;
@@ -366,26 +362,34 @@ footer .fa-solid {
   transition: 0.5s ease;
 }
 
-.menu .check-1 {
-  position : absolute;
-  top : 455px;
-  right : 35px;
+.menu .fa-circle-check {
+  position: absolute;
+  top: 20px;
+  right: 25px;
   font-size: 30px;
-  color : var(--white)
+  color: var(--white);
+  transform: translateX(200%);
+  transition: 0.5s ease;
 }
 
-.menu:hover .menu-selection-1 {
+.menu:hover .fa-circle-check {
+  animation: rotate-full 0.5s ease;
+}
+
+@keyframes rotate-full {
+  0% {
+    transform: translateX(0%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(0%) rotate(360deg);
+  }
+}
+
+.menu:hover .menu-selection,
+.menu:hover .fa-circle-check {
   transform: translateX(0%);
 }
 
-.menu:hover .price-1 {
-  transform: translateX(-270%); 
-}
-
-
-.price.price-4 {
-  top: 791px;
-  right: 25px;
-  z-index: 2;
-  transition: 0.5s ease;
+.menu:hover .price {
+  transform: translateX(-270%);
 }
