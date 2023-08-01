@@ -315,6 +315,9 @@ footer .fa-solid {
   padding: 0;
   font-size: 18px;
   font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .name-price {
