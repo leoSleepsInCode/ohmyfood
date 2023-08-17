@@ -220,8 +220,6 @@ footer .fa-solid {
   font-size: 20px;
 }
 
-/*fa heaert onclick color purple*/
-
 .nouveau {
   position: absolute;
   margin-top: 3%;
@@ -344,6 +342,7 @@ footer .fa-solid {
   font-size: 15px;
 }
 
+
 .price {
   position: absolute;
   bottom: 15px;
@@ -375,6 +374,8 @@ footer .fa-solid {
   transition: 0.5s ease;
 }
 
+/***************Meal Selection's Animation******************/
+
 .menu:hover .fa-circle-check {
   animation: rotate-full 0.5s ease;
 }
@@ -397,6 +398,7 @@ footer .fa-solid {
   transform: translateX(-270%);
 }
 
+/***************Menus Apparition's Animation******************/
 
 @keyframes fade-in {
   0% {
@@ -439,7 +441,7 @@ section {
   animation-delay: 1.5s;
 }
 
-/***************Loader******************/
+/***************Loader & Sections Delay's Animation******************/
 
 @keyframes loader {
   0% {
