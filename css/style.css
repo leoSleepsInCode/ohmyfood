@@ -439,36 +439,27 @@ section {
   animation-delay: 1.5s;
 }
 
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+/***************Loader******************/
 
-@keyframes spin {
+@keyframes loader {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
-#loader-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  z-index: 9999;
-  animation: fade-out 1s linear 3s forwards;
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
 
 .loader {
@@ -477,5 +468,33 @@ section {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: loader 3s linear infinite, hide 3s 3s forwards;
+  z-index: 9999;
 }
+
+@keyframes hideSections {
+  0% {
+    opacity: 1;
+  }
+
+  1% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.late-reveal {
+  animation: hideSections 4.5s forwards;
+}
+
