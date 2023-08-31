@@ -39,7 +39,7 @@ a {
   text-decoration: none;
 }
 
-/***************************** Index ************************/
+/***************************** Index Tags ************************/
 
 
 main section {
@@ -48,7 +48,6 @@ main section {
 
 main h3 {
   padding-bottom: 30px;
-  /* text-align: left; */
   font-size: 23px;
 }
 
@@ -63,7 +62,6 @@ header h1 {
   font-family: 'Shrikhand', cursive;
   background-color: var(--white);
   border-bottom: 3px solid hsla(0, 0%, 83%, 80%);
-  /* box-shadow: 2px 2px 3px hsl(0, 0%, 83%); */
 }
 
 header form {
@@ -106,28 +104,26 @@ header button:hover {
   background: linear-gradient(0deg,
       hsl(267, 66%, 70%),
       hsl(317, 100%, 80%));
-  -webkit-box-shadow: 5px 8px 25px -4px rgba(36, 36, 36, 1);
-  -moz-box-shadow: 5px 8px 25px -4px rgba(36, 36, 36, 1);
-  box-shadow: 5px 8px 25px -4px rgba(36, 36, 36, 1);
+  -webkit-box-shadow: 5px 8px 25px -4px rgb(92, 90, 90);
+  -moz-box-shadow: 5px 8px 25px -4px rgb(92, 90, 90);
+  box-shadow: 5px 8px 25px -4px rgb(92, 90, 90);
   transition: 0.5s ease;
 }
 
 .location input {
   width: 122px;
 }
-
-
 .choix ul {
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1000px;
   gap : 20px;
 }
 
 .choix li {
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
   padding : 30px 25px;
   min-width: 280px;
   border : none;
@@ -135,8 +131,17 @@ header button:hover {
   background-color: var(--light-grey-2);
 }
 
+.choix i {
+  padding-left : 17px;
+  padding-right: 15px;
+}
+
+.choix i:hover {
+  color: var(--purple);
+  transition: 0.5s ease;
+}
+
 article {
-  padding: 30px;
   background-color: var(--light-grey-1);
   box-sizing: border-box;
 }
@@ -146,15 +151,12 @@ article {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
   gap: 30px;
 }
 
 .restaurants li {
   position: relative;
-  display: flex;
   padding : 0;
-  max-width: 490px;
   border-radius: 20px;
   background-color: var(--white);
 }
@@ -163,7 +165,7 @@ article a {
   width: 100%;
 }
 
-article figure {
+.restaurants figure {
   position: relative;
   margin: 0;
   width: 100%;
@@ -172,7 +174,7 @@ article figure {
 article figcaption {
   display: flex;
   flex-direction: column;
-  padding: 0 25px 25px 20px;
+  padding: 0 20px 18px 20px;
 }
 
 article img {
@@ -186,7 +188,6 @@ article img {
 article h4 {
   padding-top: 15px;
   font-size: 17px;
-  /* color : hsl(0, 0, 0); */
 }
 
 article li a:visited {
@@ -215,79 +216,6 @@ footer li {
   padding-bottom: 6px ;
 }
 
-/***************************** Menus *************************/
-
-.page section h2 {
-  font-variant-caps: all-petite-caps;
-  font-weight: 200;
-  font-size: 20px;
-}
-
-.page section h3 {
-  padding: 0;
-  font-size: 18px;
-  font-weight: 400;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.page ul {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 500px;
-  gap: 30px;
-}
-
-.page li {
-  margin : 0;
-  border-radius: 20px;
-  background-color: var(--white);
-}
-
-.page section {
-  padding : 20px 10px;
-  box-sizing: border-box ;
-}
-
-.page article {
-  padding : 0;
-}
-
-.top-menu div{
-  position : relative;
-  display: flex;
-  background-color: var(--light-grey-1) ;
-}
-
-.top-menu div h1 {
-  margin-top: -60px;
-  padding-top: 40px;
-  padding-left: 15px;
-  width: 100%;
-  text-align: left;
-  font-size: 30px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  border-color : var(--light-grey-1);
-  background-color: var(--light-grey-1);
-}
-
-.top-menu img {
-  width: 100%;
-  height: 300px;
-  border-radius: 0%;
-  object-fit: cover ;
-}
-
-.menu p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 15px;
-}
-
 /*************************** Index Classes ****************************/
 
 main section .button-numbers {
@@ -297,14 +225,13 @@ main section .button-numbers {
   background-color: var(--purple);
 }
 
+.button-numbers {
+  margin-left: -36px;
+}
+
 main section .fa-solid {
   color: hsl(0, 0%, 49%);
   font-size: 18px;
-}
-
-footer .fa-solid {
-  font-size: 12px;
-  padding-right: 10px;
 }
 
 .location {
@@ -320,12 +247,42 @@ footer .fa-solid {
   height: 30px;
 }
 
+.restaurants,
+.choix  {
+  padding : 0;
+}
+
+.fonctionnement {
+  max-width: 490px;
+}
+
+.fonctionnement,
+.restaurants-card {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 10px;
+  min-width: 340px;
+  max-width: 600px;
+}
+
+.nouveau {
+  position: absolute;
+  top: 15px;
+  right : 15px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(165, 80%, 32%);
+  background-color: var(--green);
+  z-index: 4;
+}
+
 .heart-container {
   position: absolute;
-  top : 195px;
-  right : 20px;
+  top : 190px;
+  right : 5px;
   display: flex;
-  padding-right: 30px;;
+  padding-right: 20px;;
   align-self: flex-end;
   cursor: pointer;
   z-index :5;
@@ -346,84 +303,73 @@ footer .fa-solid {
   z-index: 1;
 }
 
-/* .empty-heart:hover {
-  display: none;
-} */
-  
 @keyframes fill-heart-hover {
   0% {
     transform: scale(1);
     background: linear-gradient(0deg,
-          hsl(267, 66%, 60%),
-          hsl(317, 100%, 74%));
-      background-clip: text;
-      -webkit-background-clip: text;
-  }
+      hsl(267, 66%, 60%),
+      hsl(317, 100%, 74%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    }
   50% {
     transform: scale(1.5);
     background: linear-gradient(0deg,
-        hsl(267, 66%, 60%),
-        hsl(317, 100%, 74%));
+      hsl(267, 66%, 60%),
+      hsl(317, 100%, 74%));
     background-clip: text;
     -webkit-background-clip: text;
-  }
+    }
   100% {
     transform: scale(1);
     background: linear-gradient(0deg,
-        hsl(267, 66%, 74%),
-        hsl(317, 100%, 86%));
+      hsl(267, 66%, 74%),
+      hsl(317, 100%, 86%));
     background-clip: text;
     -webkit-background-clip: text;
-  }
+    }
 }
-    
+      
 .solid-heart:hover {
   animation: fill-heart-hover 1s forwards;
 }
-
+      
 @keyframes fill-heart-click {
   0% {
     transform: scale(1);
     background: linear-gradient(0deg,
-          hsl(267, 66%, 60%),
-          hsl(317, 100%, 74%));
-    background-clip: text;
-    -webkit-background-clip: text;
-  }
-
+      hsl(267, 66%, 60%),
+      hsl(317, 100%, 74%));
+      background-clip: text;
+      -webkit-background-clip: text;
+  }  
+        
   50% {
     transform: scale(1.5);
     background: linear-gradient(0deg,
-          hsl(267, 66%, 60%),
-          hsl(317, 100%, 74%));
+      hsl(267, 66%, 60%),
+      hsl(317, 100%, 74%));
     background-clip: text;
     -webkit-background-clip: text;
-  }
-
+    }
+        
   100% {
     transform: scale(1);
     background: linear-gradient(0deg,
-          hsl(267, 66%, 60%),
-          hsl(317, 100%, 74%));
+      hsl(267, 66%, 60%),
+      hsl(317, 100%, 74%));
     background-clip: text;
     -webkit-background-clip: text;
-  }
-}
-
+    }
+      }
+      
 .solid-heart:active {
   animation: fill-heart-click 1s forwards;
 }
-
-.nouveau {
-  position: absolute;
-  margin-top: 3%;
-  margin-left: 75%;
-  padding: 5px 10px;
-  font-size: 14px;
-  font-weight: 600;
-  color: hsl(165, 80%, 32%);
-  background-color: var(--green);
-  z-index: 4;
+         
+footer .fa-solid {
+  font-size: 12px;
+  padding-right: 10px;
 }
 
 /********************** Menus Classes *************************/
@@ -434,14 +380,102 @@ footer .fa-solid {
   background-color: var(--light-grey-1);
 }
 
-.menu-logo {
-  padding-top: 20px;
-  padding-bottom: 8px ;
-  height: 30px;
+.page section {
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.page section h2 {
+  font-variant-caps: all-petite-caps;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.page section h3 {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.page article {
+  padding: 0;
+}
+
+.page ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  gap: 30px;
+}
+
+.page li {
+  margin: 0;
+  border-radius: 20px;
+  background-color: var(--white);
+}
+
+.top-menu div {
+  position: relative;
+  display: flex;
+  background-color: var(--light-grey-1);
+}
+
+.top-menu div h1 {
+  margin-top: -60px;
+  padding-top: 40px;
+  padding-left: 15px;
+  width: 100%;
+  text-align: left;
+  font-size: 30px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-color: var(--light-grey-1);
+  background-color: var(--light-grey-1);
+}
+
+.top-menu img {
+  width: 100%;
+  height: 300px;
+  border-radius: 0%;
+  object-fit: cover;
 }
 
 .top-menu {
   background-color : var(--light-grey-1); 
+}
+
+.menu {
+  position: relative;
+  display: block ;
+  padding: 15px;
+}
+
+.menu p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+}
+
+.menu .fa-circle-check {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 30px;
+  color: var(--white);
+  transform: translateX(200%);
+  transition: 0.5s ease;
+}
+
+.menu-logo {
+  padding-top: 20px;
+  padding-bottom: 8px ;
+  height: 30px;
 }
 
 .fav-page {
@@ -451,12 +485,26 @@ footer .fa-solid {
   right : 30px;
 }
 
-.menu {
-  position: relative;
-  display: block ;
-  padding: 15px;
- 
+.menu-selection {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 80px;
+  height: 72px;
+  background-color: var(--green);
+  transform: translateX(120%);
+  transition: 0.5s ease;
 }
+
+.price {
+  position: absolute;
+  bottom: 15px;
+  right: 14px;
+  z-index: 2;
+  transition: 0.5s ease;
+} 
 
 .name-price {
   display: flex;
@@ -474,49 +522,18 @@ footer .fa-solid {
   border: none;
   color: var(--white);
   background: var(--button-gradient);cursor: pointer;
-    -webkit-box-shadow: 5px 8px 25px -4px rgba(148, 148, 148, 1);
-    -moz-box-shadow: 5px 18px 25px -4px rgba(148, 148, 148, 1);
-    box-shadow: 5px 8px 25px -4px rgba(148, 148, 148, 1)
+  -webkit-box-shadow: 5px 8px 25px -4px rgba(148, 148, 148, 1);
+  -moz-box-shadow: 5px 18px 25px -4px rgba(148, 148, 148, 1);
+  box-shadow: 5px 8px 25px -4px rgba(148, 148, 148, 1)
   }
   
 .order-button:hover {
   background: linear-gradient(0deg,
       hsl(267, 66%, 70%),
       hsl(317, 100%, 80%));
-  -webkit-box-shadow: 5px 8px 25px -4px rgba(36, 36, 36, 1);
-  -moz-box-shadow: 5px 8px 25px -4px rgba(36, 36, 36, 1);
-  box-shadow: 5px 8px 25px -4px rgba(36, 36, 36, 1);
-  transition: 0.5s ease;
-}
-
-.price {
-  position: absolute;
-  bottom: 15px;
-  right: 14px;
-  z-index: 2;
-  transition: 0.5s ease;
-}
-
-.menu-selection {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  width: 80px;
-  height: 72px;
-  background-color: var(--green);
-  transform: translateX(120%);
-  transition: 0.5s ease;
-}
-
-.menu .fa-circle-check {
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  font-size: 30px;
-  color: var(--white);
-  transform: translateX(200%);
+  -webkit-box-shadow: 5px 8px 25px -4px rgb(92, 90, 90);
+  -moz-box-shadow: 5px 8px 25px -4px rgb(92, 90, 90);
+  box-shadow: 5px 8px 25px -4px rgb(92, 90, 90);
   transition: 0.5s ease;
 }
 
@@ -587,7 +604,7 @@ footer .fa-solid {
   animation-delay: 1.5s;
 }
 
-/***************Loader & Sections Delay's Animation******************/
+/***************Index Loader & Sections Delay's Animation******************/
 
 /* @keyframes loader {
   0% {
@@ -657,19 +674,62 @@ footer .fa-solid {
     padding-top: 30px;
   }
 
-  .choix ul {
-    justify-content: space-around;
-  }
-
-  article ul {
+  .fonctionnement {
     margin-left: auto;
     margin-right: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 
-  article li {
+  .fonctionnement li {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .restaurants-card {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+  }
+
+  .restaurants ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin : 0;
+    gap: 30px 20px;
+  }
+  
+  .restaurants li {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 40%;
+  }
+  
+}
+
+@media screen and (min-width: 1100px) {
+  
+  .choix ul {
+    flex-wrap: nowrap;
+  }
+
+  .fonctionnement {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+  }
+  
+  .restaurants-card {
+    margin-left: auto;
+    margin-right: auto;
+    max-width : 1080px;
+  }
+
+  .restaurants li {
     min-width: 490px;
+  }
+  
+  .restaurants ul {
+    gap: 50px 100px;
   }
 }
 
