@@ -1,0 +1,258 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+:root {
+  --light-grey-1 : hsl(0, 0%, 92%);
+  --light-grey-2 : hsl(0, 0%, 96%);
+  --white : hsl(0, 0%, 100%);
+  --button-gradient : linear-gradient(
+    0deg,
+    hsl(267, 66%, 60%), 
+    hsl(317, 100%, 74%)
+    );
+  --padding-section : 15% 5%;
+  --purple : hsl(267, 66%, 60%);
+  --footer-background : hsl(0, 0%, 21%);
+  --green : hsl(165, 56%, 75%); 
+}
+
+body {
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin :0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  background-color: hsl(0, 0%, 96%);
+}  
+
+header h1 {
+  padding : 15px 0 8px 0;
+  font-family: 'Shrikhand';
+  background-color: var(--white);
+  border-bottom: 3px solid hsla(0, 0%, 83%, 80%);
+  /* box-shadow: 2px 2px 3px hsl(0, 0%, 83%); */
+}
+
+header span {
+  padding: 15px 17px;
+}
+
+header h2 {
+  padding: 35px 80px 0 80px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+header p {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 300;
+}
+  
+header button {
+  margin-top: 15px;
+  margin-bottom: 60px;
+  padding : 15px 20px;
+  border-radius: 25px;
+  border : none;
+  color : var(--white);
+  background: var(--button-gradient);
+}
+
+main section {
+  padding: var(--padding-section);
+}
+
+main h3 {
+  padding-bottom: 30px;
+  text-align: left;
+  font-size: 23px;
+}
+
+main ul {
+  display: flex;
+  flex-direction: column; 
+  gap : 20px;
+}
+
+main li {
+  margin-left: 12px;
+  padding : 25px 25px 22px 25px;
+  border : none;
+  border-radius: 20px;
+  background-color: var(--light-grey-2);
+}
+
+main section div {
+  display: flex;
+  gap: 25px;
+  margin-left: -36px;
+}
+
+main section .button-numbers {
+  padding : 3px 8px ;
+  border-radius: 25px;
+  color : var(--white) ;
+  background-color: var(--purple);
+}
+
+main section .fa-solid {
+  color : hsl(0, 0%, 49%);
+  font-size: 18px;
+}
+
+article {
+  padding: var(--padding-section);
+  background-color: var(--light-grey-1);
+  box-sizing: border-box;
+}
+
+article li {
+  display: flex;
+  padding : 0;
+  border-radius: 20px;
+  background-color: var(--white);
+}
+
+article a {
+  width: 100%;
+}
+    
+article figure {
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+article figcaption {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px 25px 20px;
+}
+
+article img {
+  width: 100%;
+  height: 170px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  z-index: 1;
+}
+
+article h4 {
+  padding-top: 15px;
+  font-size: 17px;
+  /* color : hsl(0, 0, 0); */
+}
+
+article li a:visited {
+  color: black;
+}
+
+article p {
+  padding-top: 4px;
+  font-weight: 300;
+}
+
+footer {
+  padding: 20px;
+  color : var(--white);
+  background-color: hsl(0, 0%, 21%);
+}
+
+footer h3 {
+  padding-bottom: 17px;
+  font-family: 'Shrikhand';
+  font-size: 18px;
+  color : var(--white);
+}
+
+footer li {
+  padding-bottom: 6px ;
+}
+
+footer .fa-solid {
+  font-size: 12px;
+  padding-right: 10px;
+}
+    
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-grey-1);
+}
+
+.logo {
+  padding-top: 20px;
+  padding-bottom: 8px;
+  height: 30px;
+}
+
+.fa-heart {
+  margin-top: -30px;
+  align-self: flex-end;
+  font-size: 20px;
+}
+
+/*fa heaert onclick color purple*/
+
+.nouveau {
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 75%;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(165, 80%, 32%);
+  background-color: var(--green);
+  z-index: 4;
+}
+
+.menu-logo {
+  padding-top: 20px;
+  padding-bottom: 8px ;
+  height: 30px;
+}
+
+.menu-page {
+  padding : 0;
+}
+
+.menu-top-title {
+  background-color: var(--light-grey-1) ;
+  border-color : var(--light-grey-1);
+}
+
+.top-image {
+  border-radius : none;
+}
+
+.top-title{
+  display: flex;
+  justify-content: space-around;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.top-menu {
+  background-color : var(--light-grey-1); 
+}
