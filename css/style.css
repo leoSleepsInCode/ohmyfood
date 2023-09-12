@@ -42,7 +42,7 @@ a {
 /***************************** Index Tags ************************/
 
 
-main section {
+main > section {
   padding: 50px;
 }
 
@@ -368,8 +368,8 @@ main section .fa-solid {
   }
   
   footer .fa-solid {
-  font-size: 12px;
-  padding-right: 10px;
+    font-size: 12px;
+    padding-right: 10px;
 }
 
 /********************** Menus Classes *************************/
@@ -420,7 +420,7 @@ main section .fa-solid {
   background-color: var(--white);
 }
 
-.page section {
+article > section {
   margin-left: auto;
   margin-right: auto;
   padding: 20px 10px;
@@ -462,14 +462,25 @@ main section .fa-solid {
   padding: 0;
   font-size: 18px;
   font-weight: 400;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
+.page p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.menu section {
+  position: relative;
+   overflow : hidden;
+}
 
 .page ul {
-  display: flex;
+  display: flex; 
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
@@ -490,12 +501,6 @@ main section .fa-solid {
   padding: 15px;
 }
 
-.menu p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 15px;
-}
 
 .menu .fa-circle-check {
   position: absolute;
@@ -541,11 +546,16 @@ main section .fa-solid {
   align-items: baseline;
   margin : 0; 
 }
- 
+
+.container-button {
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .order-button {
-  /* margin-left: auto; */
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   padding: 15px 45px;
   border-radius: 25px;
   border: none;
@@ -565,6 +575,7 @@ main section .fa-solid {
   box-shadow: 5px 8px 25px -4px rgb(92, 90, 90);
   transition: 0.5s ease;
 }
+
 
 /***************Meal Selection's Animation******************/
 
@@ -743,6 +754,27 @@ main section .fa-solid {
     top: -20px;
     right: 30%;
  }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+
+  footer ul {
+    display: flex;
+    padding-bottom: 0;;
+  }
+
+  footer li {
+    padding-left: 20px;
+  }
+
+  footer h3 {
+    margin-top: -6px;
+    padding-left: 70px;
+  }
   
 }
 
