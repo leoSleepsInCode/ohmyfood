@@ -873,10 +873,8 @@ article > section {
     gap: 50px 100px;
   }
 
-  footer ul,
   footer h3{
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 30px;
   }
 }
 
