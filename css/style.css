@@ -320,9 +320,7 @@ input[type="checkbox"]:checked~label .solid-heart {
 .solid-heart {
   position: relative;
   margin-top : -1px;
-  background: linear-gradient(0deg,
-        hsl(267, 66%, 60%),
-        hsl(317, 100%, 74%));
+  background: var(--button-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -826,6 +824,8 @@ article > section {
 
   footer {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: row-reverse;
     padding-top: 60px;
     padding-bottom: 10px;
@@ -871,6 +871,10 @@ article > section {
   
   .restaurants ul {
     gap: 50px 100px;
+  }
+
+  footer h3{
+    margin-right: 30px;
   }
 }
 
