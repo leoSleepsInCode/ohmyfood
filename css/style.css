@@ -13,8 +13,6 @@
   --green : hsl(165, 56%, 75%); 
 }
 
-/*silver, grey, space*/
-
 body {
   margin: auto;
   font-family: 'Roboto', sans-serif;
@@ -512,13 +510,6 @@ article > section {
   transition: 0.5s ease;
 }
 
-/* .name-price {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin : 0; 
-} */
-
 .container-button {
   display : flex;
   justify-content: center;
@@ -550,19 +541,6 @@ article > section {
 
 
 /***************Meal Selection's Animation******************/
-/* 
-.menu:hover .fa-circle-check {
-  animation: rotate-full 0.5s ease;
-}
-
-@keyframes rotate-full {
-  0% {
-    transform: translateX(0%) rotate(0deg);
-  }
-  100% {
-    transform: translateX(0%) rotate(360deg);
-  }
-} */
 
 .menu:hover .menu-selection,
 .menu:hover .fa-circle-check {
